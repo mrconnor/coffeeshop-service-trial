@@ -9,7 +9,7 @@
         </layout>
     </appender>
 
-    <logger name="kinsaCoffee" additivity="false">
+    <logger name="coffeeShopChallenge" additivity="false">
         <level value="DEBUG" />
         <appender-ref ref="console" />
     </logger>
