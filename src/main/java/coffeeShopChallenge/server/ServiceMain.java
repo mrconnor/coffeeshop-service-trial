@@ -29,13 +29,13 @@ public class ServiceMain {
                 new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
 
         ctx.setContextPath("/coffeeshop");
-        ctx.setAttribute("coffeeShopService", coffeeShopService);
+        ctx.setAttribute(CoffeeShopHandler.ServiceAttrName, coffeeShopService);
         server.setHandler(ctx);
 
         ServletHolder serHol = ctx.addServlet(ServletContainer.class, "/*");
         serHol.setInitOrder(1);
         serHol.setInitParameter("jersey.config.server.provider.packages",
-                "kinsaCoffee.server");
+                "coffeeShopChallenge.server");
 
         try {
             logger.info("Starting server");

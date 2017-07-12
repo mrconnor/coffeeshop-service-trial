@@ -20,8 +20,9 @@ import javax.ws.rs.core.MediaType;
 public class CoffeeShopHandler {
     @Context ServletContext context;
 
+    public static String ServiceAttrName = "coffeeShopService";
     private CoffeeShopService getService() {
-        return (CoffeeShopService)context.getAttribute("coffeeShopService");
+        return (CoffeeShopService)context.getAttribute(ServiceAttrName);
     }
 
 
