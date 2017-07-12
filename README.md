@@ -4,7 +4,7 @@
 
 #### Requirements:
 
-* Java 8
+* Java 8 SDK
 * mvn
 
 #### Build:
@@ -13,12 +13,12 @@
 ~~~~
 > mvn package
 ~~~~
-This generates the JAR file:  \<repoDir\>/target/KinsaCoffeeShopService.jar
+This generates the JAR file:  \<repoDir\>/target/CoffeeShopService.jar
 
 #### Execute:
 This jar contains all dependencies.  The service can be executed like this:
 ~~~~
-> java -jar KinsaCoffeeShopService.jar
+> java -jar CoffeeShopService.jar
 ~~~~
 This runs an HTTP server that listens to "localhost:8080".
 
