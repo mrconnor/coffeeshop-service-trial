@@ -16,7 +16,7 @@ import javax.ws.rs.core.MediaType;
  * Created by Michael on 7/11/2017.
  */
 
-@Path("/")
+@Path("/coffeeshop")
 public class CoffeeShopHandler {
     @Context ServletContext context;
 
@@ -32,7 +32,6 @@ public class CoffeeShopHandler {
      * Returns the id of the newly registered shop.
      */
     @POST
-    @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
     public CoffeeShopId postShop(
             @QueryParam("name") String name,

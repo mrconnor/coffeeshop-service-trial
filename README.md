@@ -16,6 +16,13 @@
 This generates the JAR file:  \<repoDir\>/target/CoffeeShopService.jar
 
 #### Execute:
+Really, run like this:
+~~~~
+mvn jetty:run
+~~~~
+
+
+
 This jar contains all dependencies.  The service can be executed like this:
 ~~~~
 > java -jar CoffeeShopService.jar
