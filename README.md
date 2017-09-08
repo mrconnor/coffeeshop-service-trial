@@ -1,4 +1,4 @@
-# Kinsa Take-home Challenge -- Coffee Shop Service
+# Coffee Shop Service - Coding Trial
 
 ## Build and Execute
 
